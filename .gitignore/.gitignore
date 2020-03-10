@@ -1,0 +1,121 @@
+EXERCICIO 1
+
+PRINCIPAL:
+
+public final class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Triangulo triangulo1 = new Triangulo();
+		Retangulo retangulo1 = new Retangulo();
+		
+		System.out.println("a area do triangulo é: "+triangulo1.calcularArea(10,20));
+		System.out.println("a area do retangulo é: "+retangulo1.calcularRetangulo(20,40));
+	}
+
+}
+
+TRIANGULO:
+
+public class Triangulo {
+	double altura;
+	double base;
+	
+	double calcularArea(double base, double altura){
+		return base*altura/2;
+		 
+	}
+}
+
+RETANGULO:
+
+public class Retangulo {
+	double base;
+	double altura;
+	
+	double calcularRetangulo(double base, double altura){
+		return base*altura;
+		 
+	}
+
+}
+_______________________________________________________________________________________________________________
+
+Exercicio 2
+
+Principal:
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Calculadora calculo = new Calculadora();
+		
+		System.out.println("o resoltado da sua adição é: "+ calculo.Calcularadicao(10,10));
+		System.out.println("o resoltado da sua subtracao é: "+ calculo.Calcularsubtracao(30,10));
+		System.out.println("o resoltado da sua multiplicação é: "+ calculo.Calcularmultiplicacao(10,2));
+		System.out.println("o resoltado da sua Divisão é: "+ calculo.Calculardivisao(40,2));
+
+	}
+
+}
+
+Calculadora:
+
+public class Calculadora {
+	double numero1;
+	double numero2;
+	
+	double Calcularmultiplicacao(double numero1,double numero2){
+		return numero1*numero2;
+	}
+	double Calculardivisao(double numero1,double numero2){
+		return numero1/numero2;
+	}
+	double Calcularadicao(double numero1,double numero2){
+		return numero1+numero2;
+	}
+	double Calcularsubtracao(double numero1,double numero2){
+		return numero1-numero2;
+	}
+}
+______________________________________________________________________________________________________________________
+
+EXERCICIO 3
+
+Principal:
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pessoa primeiraPessoa = new Pessoa();
+		
+		primeiraPessoa.nome = "Rafael";
+		primeiraPessoa.sobrenome = "Moraes";
+		primeiraPessoa.anodeNascimento = 2004;
+		
+		System.out.println("Nome completo: "+ primeiraPessoa.mostrarNomeCompleto());
+		System.out.println("Idade: "+ primeiraPessoa.calcularIdade());
+	}
+
+}
+
+Pessoa:
+
+public class Pessoa {
+	String nome;
+	String sobrenome;
+	int anodeNascimento;
+	
+	int calcularIdade(){
+		return 2020-anodeNascimento;
+	}
+	String mostrarNomeCompleto(){
+		return nome+" "+sobrenome;
+	}
+
+}
